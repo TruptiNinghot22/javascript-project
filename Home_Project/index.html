@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Website clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+</head>
+<body>
+    <nav class="flex">
+        <div class="first-half flex">
+            <div class="logo">
+                <img src="https://image.similarpng.com/very-thumbnail/2020/12/Initial-letter-t-logo-with-thunder-on-transparent-background-PNG.png" alt="logo" width="30px">
+            </div>
+            <div class="search flex">
+                <input type="text" placeholder="search for rooms and homes">
+                <img src="https://png.pngitem.com/pimgs/s/25-254142_search-online-icon-png-transparent-png.png" alt="search" width="30px">
+            </div>
+        </div>
+        <div class="second-half flex">
+            <ul class="flex nav-links hide">
+                <li><a href="https://jenjon.in/become-a-host/">Become a host</a></li>
+                <li><a href="https://www.pinterest.com/ideas/travel/908182459161/">Trips</a></li>
+                <li><a href="https://gocrm.io/blog/home-builder-text-messaging/">Message</a></li>
+                <li><a href="https://www.helpathome.com/">Help</a></li>
+                <li><a href="#"><img src="https://as1.ftcdn.net/v2/jpg/02/32/71/62/1000_F_232716200_xTsnomMS5djsC6m9cDNQmEKtPgt11Xjo.jpg" alt="Avatar" width="45px"></a></li>
+            </ul>
+            <div class="hamburger">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAG1BMVEX///8AAAA0NDTHx8dHR0cxMTEoKCjT09POzs4EFEBlAAAAcElEQVR4nO3XwQnAIBBFQY2J2n/FaWAvEnAlzFTw2MvySwEAAAAAAAAAAAAAAAAAAAAAAAAAAACADWqsZXcd6X6uQB/ZXQB81ONvOLO7juRYAD9l7iwwpAEAAAAAAAAAAAAAAAAAAAAAAAAAAADY7wVzegD5Jyf5UQAAAABJRU5ErkJggg==" alt="hamburger" width="100px">
+            </div>
+        </div>
+    </nav>
+    <section class="home">
+        <div class="container flex home-div">
+            <div class="home-left flex">
+                <div class="home -emoji">
+                    <img src="data:image/jpeg;base64,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" alt="emoji"></div>
+                    <p>Book unique homes and experiences all over the World</p>
+                    <div class="input-search-home flex">
+                        <input class="home-input" type="text" placeholder="search for rooms and homes">
+                        <img src="https://png.pngitem.com/pimgs/s/25-254142_search-online-icon-png-transparent-png.png" alt="search" width="25px">
+                    </div>
+                    <div class="home-buttons flex">
+                        <div class="all-properties-button home-button">All properties</div>
+                        <div class="home-button">Home</div>
+                        <div class="home-button">Experiences</div>
+                        <div class="home-button">Restaurants</div>
+                    </div>        
+                </div>
+            <div class="home-right" hide>
+                <img src="https://4.bp.blogspot.com/-ez_Bp2aMe98/XaF4uOtD16I/AAAAAAABU2k/Ohhofx2jmQk69W5vLKsGPE0REa-8Mo3qQCNcBGAsYHQ/s1600/cute-contemporary-house-night-view-rendering.jpg" alt="home">
+            </div>
+        </div>
+    </section>
+    <!-- appartment section -->
+    <section class="apartment">
+        <div class="container">
+            <div class="apartments-head flex">
+                <h2>Apartments in
+                    <span>
+                        Barcelona,Spain
+                    </span>
+                </h2>
+                <h2>Show all (328)</h2>
+            </div>
+            <div class="cards">
+                <div class="card flex">
+                    <div class="card-img">
+                        <img src="https://i.pinimg.com/originals/ff/96/cd/ff96cdfe3a7c7f5e8de6f6b7b9167b03.jpg" alt="" width="400px">
+                    </div>
+                    <div class="card-content flex">
+                        <div class="card-title flex">
+                            <p>$123 per night</p>
+                            <p>🔥️4.8</p>
+                        </div>
+                        <div class="card-description">
+                            Explore old Barcelons from a 'Lefe-style Studio'
+                        </div>
+                    </div>
+                </div>
+                <div class="card flex">
+                    <div class="card-img">
+                        <img src="https://media.designcafe.com/wp-content/uploads/2020/02/21010047/living-room-interior-design-ideas-with-dining-table-for-your-home.jpg" alt="" width="400px">
+                    </div>
+                    <div class="card-content flex">
+                        <div class="card-title flex">
+                            <p>$123 per night</p>
+                            <p>🔥️4.8</p>
+                        </div>
+                        <div class="card-description">
+                            Explore old Barcelons from a 'Lefe-style Studio'
+                        </div>
+                    </div>
+                </div>
+                <div class="card flex">
+                    <div class="card-img">
+                        <img src="https://images.squarespace-cdn.com/content/v1/56f2595e8a65e2db95a7d983/1546259451880-UQYMBWFMWHXXJROF8OID/Guest+Bedroom+%284%29.jpg" alt="" width="400px">
+                    </div>
+                    <div class="card-content flex">
+                        <div class="card-title flex">
+                            <p>$123 per night</p>
+                            <p>🔥️4.8</p>
+                        </div>
+                        <div class="card-description">
+                            Explore old Barcelons from a 'Lefe-style Studio'
+                        </div>
+                    </div>
+                </div>
+                <div class="card flex">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aG91c2UlMjBraXRjaGVufGVufDB8fDB8fHww" alt="" width="400px">
+                    </div>
+                    <div class="card-content flex">
+                        <div class="card-title flex">
+                            <p>$123 per night</p>
+                            <p>🔥️4.8</p>
+                        </div>
+                        <div class="card-description">
+                            Explore old Barcelons from a 'Lefe-style Studio'
+                        </div>
+                    </div>
+                </div>
+                <div class="card flex">
+                    <div class="card-img">
+                        <img src="https://i.pinimg.com/originals/5b/40/78/5b407894ffa02c12dd57e60bbb9a4de0.jpg" alt="" width="400px">
+                    </div>
+                    <div class="card-content flex">
+                        <div class="card-title flex">
+                            <p>$123 per night</p>
+                            <p>🔥️4.8</p>
+                        </div>
+                        <div class="card-description">
+                            Explore old Barcelons from a 'Lefe-style Studio'
+                        </div>
+                    </div>
+                </div>
+                <div class="card flex">
+                    <div class="card-img">
+                        <img src="https://media.istockphoto.com/id/1262572386/photo/elegant-yet-informal-dining-area-of-new-home-with-coffered-ceiling.jpg?s=612x612&w=0&k=20&c=7cNxQ1SQ7U2ebfVOkwEwpkJJ91136PxdxIXkjuDgi08=" alt="" width="400px">
+                    </div>
+                    <div class="card-content flex">
+                        <div class="card-title flex">
+                            <p>$123 per night</p>
+                            <p>🔥️4.8</p>
+                        </div>
+                        <div class="card-description">
+                            Explore old Barcelons from a 'Lefe-style Studio'
+                        </div>
+                    </div>
+                </div>
+                <div class="card flex">
+                    <div class="card-img">
+                        <img src="https://media.istockphoto.com/id/1148629418/photo/home-or-house-building-exterior-and-interior-design-showing-tropical-pool-villa-with-green.jpg?s=612x612&w=0&k=20&c=LwIGTtfR5Ce1g0K5Oau0OtA75u5LCSotGF-PQbNS17E=" alt="" width="400px">
+                    </div>
+                    <div class="card-content flex">
+                        <div class="card-title flex">
+                            <p>$123 per night</p>
+                            <p>🔥️4.8</p>
+                        </div>
+                        <div class="card-description">
+                            Explore old Barcelons from a 'Lefe-style Studio'
+                        </div>
+                    </div>
+                </div>
+                <div class="card flex">
+                    <div class="card-img">
+                        <img src="https://i.pinimg.com/originals/8d/17/c3/8d17c3df96cd7e0003778a53d48d6478.jpg" alt="" width="400px">
+                    </div>
+                    <div class="card-content flex">
+                        <div class="card-title flex">
+                            <p>$123 per night</p>
+                            <p>🔥️4.8</p>
+                        </div>
+                        <div class="card-description">
+                            Explore old Barcelons from a 'Lefe-style Studio'
+                        </div>
+                    </div>
+                </div>
+                <div class="card flex">
+                    <div class="card-img">
+                        <img src="https://www.veeduonline.in/wp-content/uploads/2016/10/Incredible-And-Marvellous-Kerala-Home-Interior-Bedroom-Design-1.jpg" alt="" width="400px">
+                    </div>
+                    <div class="card-content flex">
+                        <div class="card-title flex">
+                            <p>$123 per night</p>
+                            <p>🔥️4.8</p>
+                        </div>
+                        <div class="card-description">
+                            Explore old Barcelons from a 'Lefe-style Studio'
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>

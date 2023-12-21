@@ -1,0 +1,58 @@
+@media screen and(max-width: 1024px){
+    htm{
+        font-size:  13px;
+    }
+    .container{
+        margin-inline: 3rem;
+    }
+    .home-left{
+        flex-basis: 80%;
+    }
+    .cards{
+        grid-template-columns: repeat(3,1fr);
+    }
+    @media screen and(max-width: 768px){
+        html{
+            font-size: 12px;
+        }
+        .hide{
+            display: none;
+        }
+        .home-left{
+            flex-basis: 90%;
+        }
+        .home{
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url("https://4.bp.blogspot.com/-ez_Bp2aMe98/XaF4uOtD16I/AAAAAAABU2k/Ohhofx2jmQk69W5vLKsGPE0REa-8Mo3qQCNcBGAsYHQ/s1600/cute-contemporary-house-night-view-rendering.jpg");
+            padding: 2rem;
+        }
+        .home-left p{
+            color: white;
+        }
+        .cards{
+            grid-template-columns: repeat(2,1fr);
+        }
+        .hamburger{
+            margin-top: 1rem;
+            display: inline-block;
+        }
+    }
+    @media screen and(max-width:450px) {
+        html{
+            font-size:10px;
+        }
+        .home-left{
+            flex-basis:10px;
+        }
+        .container{
+            margin-inline: 2rem;
+        }
+    }
+    @media screen and(max-width:320px) {
+        .cards{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+}
